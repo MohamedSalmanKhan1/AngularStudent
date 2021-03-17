@@ -1,0 +1,20 @@
+<h3>Create Student</h3>
+<p>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="" required [(ngModel)]="student.name">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Age</mat-label>
+      <input matInput placeholder="" required [(ngModel)]="student.age">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Course Fees</mat-label>
+      <input matInput placeholder="" required [(ngModel)]="student.courseFees">
+    </mat-form-field>
+  </p>
+  <button mat-raised-button ="primary" class="example-button-row" (click)="onSubmit()"> Submit </button>
